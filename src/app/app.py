@@ -1,11 +1,9 @@
-from flask import Flask, render_template
-from flask_cors import CORS
+from flask import render_template
 
 
 class App:
-    def __init__(self, name):
-        self.app = Flask(name)
-        CORS(self.app)
+    def __init__(self, app):
+        self.app = app
 
     def run(self, debug=False, host='127.0.0.1', port=5000):
         self.app.run(debug=debug, host=host, port=port)
