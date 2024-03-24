@@ -5,9 +5,6 @@ class App:
     def __init__(self, app):
         self.app = app
 
-    def run(self, debug=False, host='127.0.0.1', port=5000):
-        self.app.run(debug=debug, host=host, port=port)
-
     def add_route(self, method, route, controller_class, method_name, middleware_classes=None):
         middleware_classes = middleware_classes or []
 

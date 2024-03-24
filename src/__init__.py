@@ -1,6 +1,6 @@
 from flask import Flask
 from src.routes.route import Route
-from src.handler.app import App
+from src.server.app import App
 from flask_cors import CORS
 
 # Create an instance of the Flask class for our web app.
