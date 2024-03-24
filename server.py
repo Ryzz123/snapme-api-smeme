@@ -1,4 +1,4 @@
-from src import app
+from src import flask_app
 
 if __name__ == '__main__':
-    app.run()
+    flask_app.run()
